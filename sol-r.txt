@@ -1,0 +1,36 @@
+Thrustmaster SOL-R Reverse Engineer LED
+
+Wireshark= usb.device_address == "current usb device" && usb.endpoint_address.direction != IN && usb.src == host
+
+ID 044f:0422 ThrustMaster, Inc. Solaris Base
+
+VID=044f
+PID=0422(right hand)
+PID=042a(left hand)
+
+
+
+write to thumbstick - 018881ff
+write to everything else -  010885ff
+
+00 = thumbstick led
+01 = bottom part of tm logo
+02 = right side of tm logo
+03 = left side of tm logo
+04 =  upper circle
+05 = upper riht circle
+06 = right middle circle
+07 =  button 17
+08 =  button 16
+09 = button 18
+11 = button 5
+10 = button 6
+12 = button 7
+13 = button 8
+0a = button 19
+0b = bottom right circle
+0c = bottom circle
+0d = bottom left circle
+0e = left center circle
+0f = upper left circle
+
